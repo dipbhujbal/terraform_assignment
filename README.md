@@ -1,5 +1,5 @@
 # Terraform assignment
-Configuration in this directory creates aws resources mentioned over [here](/https://github.com/infracloudio/associate-sre-lab/tree/main/terraform)
+Configuration in this directory creates aws resources mentioned over [here](https://github.com/infracloudio/associate-sre-lab/tree/main/terraform)
 ## Usage
 To run this you need to execute:
 ```
