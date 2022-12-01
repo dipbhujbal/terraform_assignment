@@ -14,9 +14,7 @@ vpc_attributes = {
     "443" = "0.0.0.0/0"
     "80"  = "0.0.0.0/0"
   }
-
 }
-
 
 rds_attributes = {
   instance_class= "db.m4.large"

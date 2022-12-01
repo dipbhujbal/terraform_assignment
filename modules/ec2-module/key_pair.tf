@@ -9,7 +9,6 @@ resource "aws_key_pair" "generated_public_key" {
 
     provisioner "local-exec" { # Create "myKey.pem" to your machine
     command = "echo '${tls_private_key.private_key.private_key_pem}' > ./myKey.pem"
-  }
-  
+  } 
 }
 

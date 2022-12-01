@@ -20,7 +20,7 @@ resource "aws_db_subnet_group" "rds-subnet-group" {
   description = "Terraform example RDS subnet group"
   subnet_ids  = var.subnet_ids
 }
-
+# Generate random password string
 resource "random_password" "db_dev_pass" {
   length            = 40
   special           = true
@@ -30,6 +30,7 @@ resource "random_password" "db_dev_pass" {
     pass_version  = 1
   }
 }
+#Create a secret manager to store db password
 resource "aws_secretsmanager_secret" "db-pass" {
   name = "dbpw-${terraform.workspace}"
 }
